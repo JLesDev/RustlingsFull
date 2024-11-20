@@ -34,8 +34,11 @@ mod tests {
         // in if-let and while-let statements.
         
         while let integer = optional_integers.pop(){
-            cursor-= 1;
-            some(cursor);
+            
+            assert_eq!(integer, Some(range));
+            
+            cursor -= 1;
+            
         }
         
        /*  integer = optional_integers.pop() {

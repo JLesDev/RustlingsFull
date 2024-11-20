@@ -1,12 +1,13 @@
 DON'T EDIT THIS FILE!
 
-options2
+errors4
 
 intro1
 intro2
 variables1
 variables2
 variables3
+variables4
 primitive_types1
 primitive_types2
 primitive_types3
@@ -18,6 +19,7 @@ move_semantics1
 move_semantics2
 move_semantics3
 move_semantics4
+move_semantics5
 enums1
 enums2
 strings1
@@ -30,3 +32,6 @@ modules3
 hashmaps1
 hashmaps2
 options1
+errors1
+errors2
+errors3
