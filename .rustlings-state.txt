@@ -1,6 +1,6 @@
 DON'T EDIT THIS FILE!
 
-enums2
+strings3
 
 intro1
 intro2
@@ -19,3 +19,6 @@ move_semantics2
 move_semantics3
 move_semantics4
 enums1
+enums2
+strings1
+strings2
