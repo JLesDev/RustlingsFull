@@ -26,7 +26,7 @@ impl AppendBar for Vec<String> {
     fn append_bar(self)-> Self{
         let bara = String::from("Bar");
         let mut v = vec![String::from("Hi")];
-        self.push(bara)
+        self.push(bara.to_string())
     }
 
 
