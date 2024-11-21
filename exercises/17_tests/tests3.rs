@@ -10,6 +10,7 @@ impl Rectangle {
             // Returning a `Result` would be better here. But we want to learn
             // how to test functions that can panic.
             panic!("Rectangle width and height must be positive");
+
         }
 
         Rectangle { width, height }
@@ -31,6 +32,7 @@ mod tests {
         let rect = Rectangle::new(10, 20);
         assert_eq!(todo!(), 10); // Check width
         assert_eq!(todo!(), 20); // Check height
+        
     }
 
     // TODO: This test should check if the program panics when we try to create

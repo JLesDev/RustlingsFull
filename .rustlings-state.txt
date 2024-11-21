@@ -1,6 +1,6 @@
 DON'T EDIT THIS FILE!
 
-tests1
+iterators1
 
 intro1
 intro2
@@ -54,3 +54,5 @@ errors6
 generics1
 traits1
 traits2
+tests1
+tests2
