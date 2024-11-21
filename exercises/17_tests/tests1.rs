@@ -15,13 +15,18 @@ mod tests {
     // the outer module.
     
     //const is_even = Wildcard::new(is_even).unwrap();
-    use is_even::*;
+    use super::*;
 
     #[test]
     fn you_can_assert() {
+
         // TODO: Test the function `is_even` with some values.
-        assert!(200);
-        //assert!(is_even(155),"False");
+
+        assert_eq!(is_even(2), true);
+
+        assert_eq!(is_even(5), false);
+
+        
     }
 }/* 
 use super::*;

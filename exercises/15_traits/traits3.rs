@@ -9,9 +9,9 @@ trait Licensed {
     fn append_bar(self) -> Self;
 }
 impl AppendBar for String {
-    // TODO: Implement `AppendBar` for the type `String`.
-    //append_bar("Bar".to_owned(self));
-    fn append_bar(/*String::from(*/self)/*)*/ -> Self{
+        // TODO: Implement `AppendBar` for the type `String`.
+        //append_bar("Bar".to_owned(self));
+        fn append_bar(/*String::from(*/self)/*)*/ -> Self{
         //("Bar".to_owned().to_string())
         //"Bar".to_owned().to_string()
         //self.to_string()."Bar".to_owned().to_string()
@@ -19,7 +19,8 @@ impl AppendBar for String {
         self + &bara.to_owned()
     }
 } */
-impl Licensed for licensing_info{
+
+impl Licensed for String {
     fn licensing_info(&self) -> String {
         "Default license".to_string()
     }
@@ -40,8 +41,6 @@ struct SomeSoftware {
 struct OtherSoftware {
     version_number: String,
 }
-
-
 
 
 impl Licensed for SomeSoftware {} // Don't edit this line.
