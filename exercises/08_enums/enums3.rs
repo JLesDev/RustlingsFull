@@ -4,7 +4,7 @@ struct Point {
 }
 
 enum Message {
-    Resize (u64,u64 ),
+    Resize {width: u64,height: u64},
     Move(Point),
     Echo(String),
     ChangeColor(u8, u8, u8),
@@ -59,14 +59,8 @@ impl State {
             Message::Echo(str) => self.echo(str),
             Message::Move(ptr) => self.move_position(ptr),
             Message::Quit => self.quit(),
-            //Message::Resize => self.resize,
-            Message::Resize(w, h) => self.resize(w: u64, h: u64),
+            Message::Resize{width, height} => self.resize(width, height),
 
-            /*  Resize { width: u64, height: u64 },
-                Move(Point),
-                Echo(String),
-                ChangeColor(u8, u8, u8),
-                Quit, */
         }
     }
 }
