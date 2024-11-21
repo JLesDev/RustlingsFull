@@ -7,8 +7,8 @@ trait AppendBar {
 impl AppendBar for String {
     // TODO: Implement `AppendBar` for the type `String`.
     //append_bar("Bar".to_owned(self));
-    fn append_bar(String::from(self)){
-        
+    fn append_bar(/*String::from(*/self)/*)*/ -> Self{
+        self.to_owned().to_string().
     }
 
 

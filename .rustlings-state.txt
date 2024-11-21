@@ -1,6 +1,6 @@
 DON'T EDIT THIS FILE!
 
-quiz2
+traits1
 
 intro1
 intro2
