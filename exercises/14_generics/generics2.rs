@@ -8,7 +8,7 @@ struct Wrapper<T>(T);
 // TODO: Adapt the struct's implementation to be generic over the wrapped value.
 impl Wrapper {
     fn new::<T> -> Self {
-        Wrapper <T>
+        Wrapper(T);
     }
 }
 
