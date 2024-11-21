@@ -5,6 +5,33 @@ trait Licensed {
     // The default license information should be the string "Default license".
     fn licensing_info(&self) -> String;
 }
+/*trait AppendBar {
+    fn append_bar(self) -> Self;
+}
+impl AppendBar for String {
+    // TODO: Implement `AppendBar` for the type `String`.
+    //append_bar("Bar".to_owned(self));
+    fn append_bar(/*String::from(*/self)/*)*/ -> Self{
+        //("Bar".to_owned().to_string())
+        //"Bar".to_owned().to_string()
+        //self.to_string()."Bar".to_owned().to_string()
+        let bara = String::from("Bar");
+        self + &bara.to_owned()
+    }
+} */
+impl Licensed for licensing_info{
+    fn licensing_info(&self) -> String {
+        "Default license".to_string()
+    }
+}
+
+/* 
+struct licensing_info{
+    fn licensing_info(&self) -> String {
+        "Default license".to_string()
+    }
+}
+*/
 
 struct SomeSoftware {
     version_number: i32,
@@ -13,6 +40,9 @@ struct SomeSoftware {
 struct OtherSoftware {
     version_number: String,
 }
+
+
+
 
 impl Licensed for SomeSoftware {} // Don't edit this line.
 impl Licensed for OtherSoftware {} // Don't edit this line.
