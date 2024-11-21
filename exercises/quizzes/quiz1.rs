@@ -12,6 +12,29 @@
 // the quantity bought.
 // fn calculate_price_of_apples(???) -> ??? { ??? }
 
+fn calculate_price_of_apples(apples_bought: i64) -> i64{
+    
+    let cost: i64 = 5;
+
+    if apples_bought < 40 {
+        cost = apples_bought * 2
+    }
+    else{
+        cost = apples_bought
+    }
+}
+
+fn picky_eater(food: &str) -> &str {
+    if food == "strawberry" {
+        "Yummy!"
+    } else if food == "potato"{
+        "I guess I can eat that."
+    }
+    else {
+        "No thanks!"
+    }
+}
+
 fn main() {
     // You can optionally experiment here.
 }

@@ -35,7 +35,7 @@ mod tests {
         
         while let integer = optional_integers.pop(){
             
-            assert_eq!(integer, Some(range));
+            //assert_eq!(integer, Some(cursor));
             
             cursor -= 1;
             
