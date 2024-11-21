@@ -8,7 +8,12 @@ impl AppendBar for String {
     // TODO: Implement `AppendBar` for the type `String`.
     //append_bar("Bar".to_owned(self));
     fn append_bar(/*String::from(*/self)/*)*/ -> Self{
-        self.to_owned().to_string().
+        //("Bar".to_owned().to_string())
+        //"Bar".to_owned().to_string()
+        //self.to_string()."Bar".to_owned().to_string()
+        let bara = String::from("Bar");
+        self + &bara.to_owned()
+
     }
 
 
