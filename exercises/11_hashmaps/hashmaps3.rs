@@ -82,7 +82,7 @@ England,Spain,1,0";
 
     #[test]
     fn build_scores() {
-        let scores = build_scores_table(RESULTS);
+        let scores = build_scores_table(RESULTS.to_string());
 
         assert!(["England", "France", "Germany", "Italy", "Poland", "Spain"]
             .into_iter()
@@ -91,7 +91,7 @@ England,Spain,1,0";
 
     #[test]
     fn validate_team_score_1() {
-        let scores = build_scores_table(RESULTS);
+        let scores = build_scores_table(RESULTS.to_string());
         let team = scores.get("England").unwrap();
         assert_eq!(team.goals_scored, 6);
         assert_eq!(team.goals_conceded, 4);
@@ -99,7 +99,7 @@ England,Spain,1,0";
 
     #[test]
     fn validate_team_score_2() {
-        let scores = build_scores_table(RESULTS);
+        let scores = build_scores_table(RESULTS.to_string());
         let team = scores.get("Spain").unwrap();
         assert_eq!(team.goals_scored, 0);
         assert_eq!(team.goals_conceded, 3);
