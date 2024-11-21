@@ -23,10 +23,13 @@ impl AppendBar for Vec<String> {
 impl AppendBar for Vec<String> {
     // TODO: Implement `AppendBar` for the type `String`.
     //append_bar("Bar".to_owned(self));
-    fn append_bar(self)-> Self{
+    fn append_bar(mut self)-> Self{
         let bara = String::from("Bar");
-        let mut v = vec![String::from("Hi")];
-        self.push(bara.to_string())
+        //let bara = "Bar";
+        //let mut v = vec![String::from("Hi")];
+        //self.push(bara.to_string())
+        self.push(bara);
+        self
     }
 
 
