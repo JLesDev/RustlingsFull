@@ -34,7 +34,7 @@ fn build_scores_table(results: String) -> HashMap<String, Team> {
         // number of goals conceded by team 1.
 
         scores
-            .entry(team_1_name.clone())
+            .entry(team_1_name.clone().to_string())
             // If the Team struct exists, modify it by incrementing the goals_scored and goals_conceded fields
             .and_modify(|team| {
                 team.goals_scored += team_1_score;
@@ -42,20 +42,20 @@ fn build_scores_table(results: String) -> HashMap<String, Team> {
             })
             // If the Team struct does not exist, insert a new one with the initial scores
             .or_insert(Team {
-                name: team_1_name,
+                name: team_1_name.to_string(),
                 goals_scored: team_1_score,
                 goals_conceded: team_2_score,
             });
 
         // Repeat the same process for the second team
         scores
-            .entry(team_2_name.clone())
+            .entry(team_2_name.clone().to_string())
             .and_modify(|team| {
                 team.goals_scored += team_2_score;
                 team.goals_conceded += team_1_score;
             })
             .or_insert(Team {
-                name: team_2_name,
+                name: team_2_name.to_string(),
                 goals_scored: team_2_score,
                 goals_conceded: team_1_score,
             });
