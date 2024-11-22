@@ -23,9 +23,45 @@ enum Command {
     Append(usize),
 }
 
+// fn vec_map(input: &[i32]) -> Vec<i32> {
+/*
+fn count_for(map: &HashMap<String, Progress>, value: Progress) -> usize {
+    let mut count = 0;
+    for val in map.values() {
+        if *val == value {
+            count += 1;
+        }
+    }
+    count
+} */
+
 mod my_module {
+    use super::Command::Uppercase;
+    use super::Command::Trim;
+    use super::Command::Append;
     use super::Command;
     
+    pub fn transformer(input: Vec<String>, com: Command) -> Vec<String>{
+        let bara = String::from("Bar").to_string();
+        let barass = "Bar";
+        let baras = input + &bara.to_owned();
+        match com{
+            Uppercase => input.to_uppercase(),
+            Trim => input.trim_start(),
+            Append(usize) => input.bara.to_owned(),
+        }
+        /* 
+        if com == Uppercase{
+            let up = input.to_uppercase();
+            up
+        }
+        else if com == "Trim"{
+
+        }
+        else if com == "Append"{
+
+        }*/
+    }
     // TODO: Complete the function as described above.
     // pub fn transformer(input: ???) -> ??? { ??? }
 }
@@ -40,6 +76,7 @@ mod tests {
     // use ???;
     use super::Command;
     use super::*;
+    //use mod::my_module;
     
 
     #[test]
