@@ -39,6 +39,8 @@ mod tests {
     // TODO: What do we need to import to have `transformer` in scope?
     // use ???;
     use super::Command;
+    use super::*;
+    
 
     #[test]
     fn it_works() {
