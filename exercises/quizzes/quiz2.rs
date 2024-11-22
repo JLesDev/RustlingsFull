@@ -44,12 +44,17 @@ mod my_module {
     pub fn transformer(input: Vec<String>, com: Command) -> Vec<String>{
         let bara = String::from("Bar").to_string();
         let barass = "Bar";
-        let baras = input + &bara.to_owned();
+        let baras = input.push(bara);
         match com{
             Uppercase => input.to_uppercase(),
             Trim => input.trim_start(),
-            Append(usize) => input.bara.to_owned(),
+            Append(usize) => baras,
         }
+        /*let bara = String::from("Bar");
+        //let bara = "Bar";
+        //let mut v = vec![String::from("Hi")];
+        //self.push(bara.to_string())
+        self.push(bara); */
         /* 
         if com == Uppercase{
             let up = input.to_uppercase();
