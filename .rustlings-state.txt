@@ -1,6 +1,6 @@
 DON'T EDIT THIS FILE!
 
-tests3
+rc1
 
 intro1
 intro2
@@ -58,5 +58,6 @@ traits2
 tests1
 tests2
 iterators1
+box1
 macros1
 macros2
