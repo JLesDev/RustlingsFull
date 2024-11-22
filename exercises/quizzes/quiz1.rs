@@ -14,13 +14,15 @@
 
 fn calculate_price_of_apples(apples_bought: i64) -> i64{
     
-    let cost: i64 = 5;
+    let cost: i64;
 
-    if apples_bought < 40 {
-        cost = apples_bought * 2
+    if apples_bought < 41 {
+        cost = apples_bought * 2;
+        cost
     }
     else{
-        cost = apples_bought
+        cost = apples_bought;
+        cost
     }
 }
 
