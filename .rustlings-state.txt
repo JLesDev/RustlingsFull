@@ -1,6 +1,6 @@
 DON'T EDIT THIS FILE!
 
-lifetimes1
+lifetimes2
 
 intro1
 intro2
@@ -55,6 +55,7 @@ errors6
 generics1
 traits1
 traits2
+lifetimes1
 tests1
 tests2
 iterators1
