@@ -1,6 +1,6 @@
 DON'T EDIT THIS FILE!
 
-quiz2
+clippy2
 
 intro1
 intro2
@@ -67,3 +67,4 @@ arc1
 cow1
 macros1
 macros2
+clippy1
