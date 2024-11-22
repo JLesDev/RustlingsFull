@@ -1,6 +1,6 @@
 DON'T EDIT THIS FILE!
 
-arc1
+threads1
 
 intro1
 intro2
@@ -60,6 +60,7 @@ tests2
 iterators1
 box1
 rc1
+arc1
 cow1
 macros1
 macros2
