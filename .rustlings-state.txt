@@ -1,6 +1,6 @@
 DON'T EDIT THIS FILE!
 
-using_as
+structs1
 
 intro1
 intro2
@@ -65,9 +65,12 @@ box1
 rc1
 arc1
 cow1
+threads1
+threads2
 macros1
 macros2
 macros3
 macros4
 clippy1
 clippy2
+using_as
