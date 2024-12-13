@@ -38,11 +38,11 @@ mod tests {
             assert_eq!(integer, cursor);
             cursor -= 1;
         }*/
-        let integer = optional_integers.pop();
-        while let integer = vec![None]{
-            integer = optional_integers.pop();
-            assert_eq!(integer, cursor);
-            println!("{}",integer);
+        //let integer = optional_integers.pop();
+        while let integer = optional_integers.pop(){
+            
+            assert_eq!((integer) as i8, cursor);
+            //println!("{}",integer);
             cursor -= 1;
         }
 

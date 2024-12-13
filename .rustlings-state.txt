@@ -1,6 +1,6 @@
 DON'T EDIT THIS FILE!
 
-structs1
+generics2
 
 intro1
 intro2
@@ -31,6 +31,9 @@ move_semantics2
 move_semantics3
 move_semantics4
 move_semantics5
+structs1
+structs2
+structs3
 enums1
 enums2
 enums3
@@ -67,10 +70,10 @@ arc1
 cow1
 threads1
 threads2
+threads3
 macros1
 macros2
 macros3
 macros4
 clippy1
-clippy2
 using_as
