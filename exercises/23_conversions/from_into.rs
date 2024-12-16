@@ -37,7 +37,7 @@ impl From<&str> for Person {
     fn from(s: &str) -> Self {
 
         if let mut split = s.split(','){
-            Ok(Self)
+            Ok(s.split(','))
         }
 
         Err()
